@@ -52,6 +52,9 @@ form {
 	grid-template-rows: 1fr 1fr;
 	row-gap: 2em;
 	margin-top: 2em;
+	input[type="radio"]:hover {
+		cursor: pointer;
+	}
 	button {
 		text-transform: uppercase;
 		font-weight: 700;
@@ -61,6 +64,14 @@ form {
 		border-radius: 999em;
 		background-color: $orange;
 		color: white;
+		transition-property: background, color, transform;
+		transition: 0.2s linear;
+	}
+	button:hover {
+		cursor: pointer;
+		color: $orange;
+		background: white;
+		transform: translateY(-5px);
 	}
 }
 

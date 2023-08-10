@@ -46,6 +46,9 @@ form {
   row-gap: 2em;
   margin-top: 2em;
 }
+form input[type=radio]:hover {
+  cursor: pointer;
+}
 form button {
   text-transform: uppercase;
   font-weight: 700;
@@ -55,6 +58,14 @@ form button {
   border-radius: 999em;
   background-color: hsl(25deg, 97%, 53%);
   color: white;
+  transition-property: background, color, transform;
+  transition: 0.2s linear;
+}
+form button:hover {
+  cursor: pointer;
+  color: hsl(25deg, 97%, 53%);
+  background: white;
+  transform: translateY(-5px);
 }
 
 #rating {
