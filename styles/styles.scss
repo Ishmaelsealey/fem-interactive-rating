@@ -89,3 +89,14 @@ p {
 	font-size: 15px;
 	color: $light-grey;
 }
+
+.attribution {
+	position: absolute;
+	bottom: 2em;
+	font-size: 11px;
+	text-align: center;
+	color: $medium-grey;
+	a {
+		color: $orange;
+	}
+}
