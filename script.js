@@ -20,12 +20,12 @@ form.addEventListener('submit', (event) => {
 		return false
 	}
 
-	rating.style.transform = 'translate(0, -100vh)'
-	setInterval(() => {
-		thankyou.style.transform = 'translate(0, 0)'
-	}, 200);
-	setInterval(() => {
+	rating.style.animationPlayState = 'running'
+	console.log('animation running')
+	rating.addEventListener('animationend', () => {
+		console.log('animation end')
 		rating.style.display = 'none'
-	}, 1000);
-
+		thankyou.style.display = 'flex'
+		thankyou.style.animationPlayState = 'running'
+	})
 })

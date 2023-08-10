@@ -98,18 +98,36 @@ form button:hover {
   transform: translateY(-5px);
 }
 
+*:focus {
+  outline: 3px solid hsl(217deg, 12%, 63%);
+}
+
 #rating {
   display: flex;
   flex-direction: column;
-  transition: transform 1s linear;
+  animation: slide-out 0.5s linear forwards;
+  animation-play-state: paused;
 }
 
+@keyframes slide-out {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, -100vh);
+  }
+}
 #thankyou {
-  transform: translate(0, 100vh);
-  transition: transform 1s linear;
-  display: flex;
+  transition: transform 1s linear, opacity 0.5s linear;
+  display: none;
   flex-direction: column;
   align-items: center;
+  animation-name: slide-in;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
 }
 #thankyou #chosenRating {
   color: hsl(25deg, 97%, 53%);
@@ -122,6 +140,16 @@ form button:hover {
   text-align: center;
 }
 
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translate(0, 100vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
 p {
   font-size: 15px;
   color: hsl(217deg, 12%, 63%);
