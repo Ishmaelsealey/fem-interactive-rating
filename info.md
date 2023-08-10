@@ -11,7 +11,5 @@ For this project I will create a `<main></main>` (this will be the container for
 Then I will store the rating and thank you states in separate `<section></section>` inside the main tag.
 Using javascript I will switch the display property of the items from flex to none.
 
-I should set rating 5 on autofocus...
-
 It will be centered using cssgrid, 3 rows.
 The attribution will be placed at the bottom of the screen
