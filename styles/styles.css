@@ -21,8 +21,6 @@ h1, h2, h3, h4 {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
   background: hsl(213deg, 19%, 18%);
   max-width: 350px;
   min-height: 350px;
@@ -59,8 +57,24 @@ form button {
   color: white;
 }
 
-#thankyou {
+#rating {
   display: none;
+}
+
+#thankyou {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#thankyou #chosenRating {
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsla(216deg, 12%, 54%, 0.1);
+  border-radius: 999em;
+  padding: 0.3em 0.5em;
+  margin: 1em 0 1.5em;
+}
+#thankyou p {
+  text-align: center;
 }
 
 p {
