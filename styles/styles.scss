@@ -52,8 +52,37 @@ form {
 	grid-template-rows: 1fr 1fr;
 	row-gap: 2em;
 	margin-top: 2em;
-	input[type="radio"]:hover {
+	label {
+		position: relative;
+	}
+	input[type="radio"] {
+		position: absolute;
+		width: 48px;
+		height: 48px;
+		bottom: 0;
+		opacity: 0;
+	}
+	.custom-checkbox {
+		margin: 0;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 999em;
+		width: 3em;
+		height: 3em;
+		background-color: $dark-blue;
+		color: white;
+	}
+	input[type="radio"]:focus + .custom-checkbox {
+		border: 5px solid $very-dark-blue;
+	}
+	input[type="radio"]:checked + .custom-checkbox {
+		background-color: $light-grey;
+	}
+	input[type="radio"]:hover + .custom-checkbox {
 		cursor: pointer;
+		background-color: $orange;
 	}
 	button {
 		text-transform: uppercase;

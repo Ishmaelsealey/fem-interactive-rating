@@ -46,8 +46,37 @@ form {
   row-gap: 2em;
   margin-top: 2em;
 }
-form input[type=radio]:hover {
+form label {
+  position: relative;
+}
+form input[type=radio] {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  bottom: 0;
+  opacity: 0;
+}
+form .custom-checkbox {
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999em;
+  width: 3em;
+  height: 3em;
+  background-color: hsl(213deg, 19%, 18%);
+  color: white;
+}
+form input[type=radio]:focus + .custom-checkbox {
+  border: 5px solid hsl(216deg, 12%, 8%);
+}
+form input[type=radio]:checked + .custom-checkbox {
+  background-color: hsl(217deg, 12%, 63%);
+}
+form input[type=radio]:hover + .custom-checkbox {
   cursor: pointer;
+  background-color: hsl(25deg, 97%, 53%);
 }
 form button {
   text-transform: uppercase;
