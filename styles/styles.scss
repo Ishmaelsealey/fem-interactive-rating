@@ -14,7 +14,7 @@ $very-dark-blue: hsl(216, 12%, 8%);
 }
 
 body {
-	background-color: $very-dark-blue;
+	background-color: hsl(228,11%,9%);
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -28,7 +28,7 @@ h1, h2, h3, h4 {
 }
 
 main {
-	background: $dark-blue;
+	background: linear-gradient(hsl(213, 19%, 18%), hsl(215,27%,12%));
 	max-width: 350px;
 	min-height: 350px;
 	border-radius: 1em;
@@ -65,20 +65,19 @@ form {
 }
 
 #rating {
-	display: none;
-	// display: flex;
-	// flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 #thankyou {
-	display: flex;
+	display: none;
 	flex-direction: column;
 	align-items: center;
 	#chosenRating {
 		color: $orange;
 		background-color: hsla(216, 12%, 54%, 0.1);
 		border-radius: 999em;
-		padding: 0.3em 0.5em;
+		padding: 0.5em 0.8em;
 		margin: 1em 0 1.5em;
 	}
 	p {

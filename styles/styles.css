@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: hsl(216deg, 12%, 8%);
+  background-color: hsl(228deg, 11%, 9%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@ h1, h2, h3, h4 {
 }
 
 main {
-  background: hsl(213deg, 19%, 18%);
+  background: linear-gradient(hsl(213deg, 19%, 18%), hsl(215deg, 27%, 12%));
   max-width: 350px;
   min-height: 350px;
   border-radius: 1em;
@@ -58,11 +58,12 @@ form button {
 }
 
 #rating {
-  display: none;
+  display: flex;
+  flex-direction: column;
 }
 
 #thankyou {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
 }
@@ -70,7 +71,7 @@ form button {
   color: hsl(25deg, 97%, 53%);
   background-color: hsla(216deg, 12%, 54%, 0.1);
   border-radius: 999em;
-  padding: 0.3em 0.5em;
+  padding: 0.5em 0.8em;
   margin: 1em 0 1.5em;
 }
 #thankyou p {
