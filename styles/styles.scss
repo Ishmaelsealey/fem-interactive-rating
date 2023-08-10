@@ -30,9 +30,10 @@ h1, h2, h3, h4 {
 main {
 	background: linear-gradient(hsl(213, 19%, 18%), hsl(215,27%,12%));
 	max-width: 350px;
-	min-height: 350px;
+	height: 350px;
 	border-radius: 1em;
 	padding: 1.5em;
+	overflow: hidden;
 }
 
 #svg {
@@ -107,10 +108,13 @@ form {
 #rating {
 	display: flex;
 	flex-direction: column;
+	transition: transform 1s linear;
 }
 
 #thankyou {
-	display: none;
+	transform: translate(0, 100vh);
+	transition: transform 1s linear;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 	#chosenRating {

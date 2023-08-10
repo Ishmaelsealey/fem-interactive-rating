@@ -20,7 +20,12 @@ form.addEventListener('submit', (event) => {
 		return false
 	}
 
-	rating.style.display = 'none'
-	thankyou.style.display = 'flex'
+	rating.style.transform = 'translate(0, -100vh)'
+	setInterval(() => {
+		thankyou.style.transform = 'translate(0, 0)'
+	}, 200);
+	setInterval(() => {
+		rating.style.display = 'none'
+	}, 1000);
 
 })
