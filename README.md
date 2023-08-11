@@ -75,4 +75,4 @@ Google page speed insights (Lighthouse tab in chrome devtools):
 ## Acknowledgments
 
 - Even though I didn't use it in my final version [this stackoverflow answer](https://stackoverflow.com/a/31983466)
-helped me accomplish my transition goals in JavaScript!
+  helped me accomplish my transition goals in JavaScript!

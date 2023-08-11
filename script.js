@@ -1,31 +1,31 @@
-const rating = document.getElementById('rating')
-const thankyou = document.getElementById('thankyou')
-const form = document.querySelector('form')
-const chosenRating = document.getElementById('chosenRating')
+const rating = document.getElementById("rating");
+const thankyou = document.getElementById("thankyou");
+const form = document.querySelector("form");
+const chosenRating = document.getElementById("chosenRating");
 
-form.addEventListener('submit', (event) => {
-	event.preventDefault()
-	if (form.querySelector('#one').checked) {
-		chosenRating.innerHTML = 'You selected 1 out of 5'
-	} else if (form.querySelector('#two').checked) {
-		chosenRating.innerHTML = 'You selected 2 out of 5'
-	} else if (form.querySelector('#three').checked) {
-		chosenRating.innerHTML = 'You selected 3 out of 5'
-	} else if (form.querySelector('#four').checked) {
-		chosenRating.innerHTML = 'You selected 4 out of 5'
-	} else if (form.querySelector('#five').checked) {
-		chosenRating.innerHTML = 'You selected 5 out of 5'
-	} else {
-		alert('You did not chose a rating!')
-		return false
-	}
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  if (form.querySelector("#one").checked) {
+    chosenRating.innerHTML = "You selected 1 out of 5";
+  } else if (form.querySelector("#two").checked) {
+    chosenRating.innerHTML = "You selected 2 out of 5";
+  } else if (form.querySelector("#three").checked) {
+    chosenRating.innerHTML = "You selected 3 out of 5";
+  } else if (form.querySelector("#four").checked) {
+    chosenRating.innerHTML = "You selected 4 out of 5";
+  } else if (form.querySelector("#five").checked) {
+    chosenRating.innerHTML = "You selected 5 out of 5";
+  } else {
+    alert("You did not chose a rating!");
+    return false;
+  }
 
-	rating.style.animationPlayState = 'running'
-	console.log('animation running')
-	rating.addEventListener('animationend', () => {
-		console.log('animation end')
-		rating.style.display = 'none'
-		thankyou.style.display = 'flex'
-		thankyou.style.animationPlayState = 'running'
-	})
-})
+  rating.style.animationPlayState = "running";
+  console.log("animation running");
+  rating.addEventListener("animationend", () => {
+    console.log("animation end");
+    rating.style.display = "none";
+    thankyou.style.display = "flex";
+    thankyou.style.animationPlayState = "running";
+  });
+});
