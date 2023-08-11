@@ -54,6 +54,11 @@ I learnt that when I come across an issue and I think I'm doing exactly what I'v
 
 Use vendor prefixes to ensure styles are the same across many browsers.
 Test the solution using a screenreader, keyboard only, prefers reduced motion.
+use prettier to format the code
+
+Google page speed insights (Lighthouse tab in chrome devtools):
+
+- used `<meta name="description" content="description of page">` tag for SEO
 
 ### Useful resources
 
